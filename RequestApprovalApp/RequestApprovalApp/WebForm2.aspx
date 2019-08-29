@@ -9,14 +9,32 @@
         .auto-style1 {
             margin-left: 531px;
         }
-    </style>
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div> 
-            <h1 style="text-align:center">User Page<asp:Button ID="Button2" runat="server" CssClass="auto-style1" OnClick="Button2_Click" Text="Logout" Width="136px" />
-            </h1>
+            <h1 style="text-align:left">User Page</h1>
+            <asp:Button ID="Button2"  align="right" runat="server" CssClass="auto-style1" OnClick="Button2_Click" Text="Logout" Width="136px" />
+            
         </div>
+   <br />
+    <br />
+    <h3>Create Request</h3> 
+
+        <asp:Label ID="Label1" runat="server" Text="Type your Request :"></asp:Label>
+        
+        <asp:TextBox ID="TextBox1" runat="server" Height="53px" Width="695px"></asp:TextBox>
+        
+        <p>
+            <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Create" Width="126px" />
+        </p>
+        <p>
+            <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Show All Request" />
+        </p>
+        <asp:GridView ID="GridView1" runat="server">
+        </asp:GridView>
     </form>
+   
 </body>
 </html>
